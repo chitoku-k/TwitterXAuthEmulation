@@ -1,9 +1,5 @@
 ﻿using CoreTweet;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TwitterXAuthEmulation
 {
@@ -19,8 +15,8 @@ namespace TwitterXAuthEmulation
         {
             Console.Clear();
             Console.WriteLine("=== テスト開始 ===\n");
-            string name = XAuthEmulation.GetInput("ユーザー名");
-            string password = XAuthEmulation.GetSecureInput("パスワード");
+            string name = Utilities.GetInput("ユーザー名");
+            string password = Utilities.GetSecureInput("パスワード");
             
             Console.WriteLine("\n\nrequest_token の取得中...");
             var session = OAuth.AuthorizeAsync("(YOUR_CONSUMER_KEY)", "(YOUR_CONSUMER_SECRET)");
