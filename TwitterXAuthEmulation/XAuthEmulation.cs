@@ -20,7 +20,7 @@ namespace TwitterXAuthEmulation
         static WebClient _client = new WebClient();
 
         const string AuthorizeUri = "https://api.twitter.com/oauth/authorize";
-        const string AuthenticityTokenPattern = @"<input name=""authenticity_token"" type=""hidden"" value=""(\w+)"" />";
+        const string AuthenticityTokenPattern = @"<input name=""authenticity_token"" type=""hidden"" value=""(\w+)"">";
         const string CodePattern = @"<code>(\d+)</code>";
         const string ErrorPattern = @"<div class=""error notice"".*?>.*?<p>(.*?)(?:<a.*?)?<\/p>.*?<\/div>";
 
