@@ -22,7 +22,7 @@ namespace TwitterXAuthEmulation
         const string AuthorizeUri = "https://api.twitter.com/oauth/authorize";
         const string AuthenticityTokenPattern = @"<input name=""authenticity_token"" type=""hidden"" value=""(\w+)"">";
         const string CodePattern = @"<code>(\d+)</code>";
-        const string ErrorPattern = @"<div class=""error notice"".*?>.*?<p>(.*?)(?:<a.*?)?<\/p>.*?<\/div>";
+        const string ErrorPattern = @"<div class=""error notice"".*?>.*?<p>(.*?)(?:<a.*?)?</p>.*?</div>";
 
         /// <summary>
         /// 非同期操作としてリクエスト トークンおよびユーザー名とパスワードを使用して、PIN コードを取得します。
